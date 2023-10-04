@@ -39,8 +39,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Reposit URL: [github](https://github.com/rosendo2015/article-preview)
+- Solution URL: [Vercel](https://article-preview-liard.vercel.app/)
+- Live Site URL: [Article Preview Liard](https://article-preview-liard.vercel.app/)
 
 ## My process
 
