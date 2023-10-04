@@ -1,0 +1,186 @@
+.app {
+  margin: 4rem auto;
+  max-width: 375px;
+  background: #fff;
+  border-radius: 10px;
+}
+.cover {
+  width: 100%;
+  height: 222px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+main {
+  padding: 2rem 2rem 1.5rem;
+}
+main h3 {
+  margin-bottom: 1rem;
+  font-size: 19px;
+  color: var(--DesaturatedDarkBlue);
+}
+main p {
+  line-height: 1.6;
+  font-size: 16px;
+  color: var(--DesaturatedDarkBlue);
+}
+.aplaudir {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: none;
+  background: transparent;
+  color: var(--GrayishBlue);
+  cursor: pointer;
+}
+.aplaudir:hover {
+  color: var(--DesaturatedDarkBlue);
+}
+footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2rem 1.5rem;
+  trasition: 0.7s;
+  color: var(--VeryDarkGrayishBlue);
+}
+footer .wrapperAvatar {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+footer .avatar {
+  width: 38px;
+  border-radius: 50%;
+}
+
+footer .avatarInfo {
+  font-size: 13.5px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+footer .avatarInfo strong {
+  color: var(--VeryDarkGrayishBlue);
+}
+footer .avatarInfo time {
+  color: var(--DesaturatedDarkBlue);
+}
+
+.button {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border: 0;
+}
+
+.share {
+  width: 100%;
+  height: 100px;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--VeryDarkGrayishBlue);
+  padding: 2rem 2rem 1.5rem;
+  color: var(--LightGrayishBlue);
+}
+.share .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: normal;
+}
+.share .social span {
+  font-size: 13px;
+  letter-spacing: 10px;
+}
+.share .social img {
+  cursor: pointer;
+}
+.avatarDesktop {
+  display: none;
+}
+@media (min-width: 760px) {
+  .app {
+    margin: 6rem auto;
+    height: 300px;
+    max-width: 750px;
+    display: flex;
+  }
+  .cover {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px 0 0 10px;
+  }
+  main {
+    padding: 2rem;
+  }
+  main h3 {
+    font-size: 19px;
+    color: var(--VeryDarkGrayishBlue);
+  }
+  main p {
+    font-size: 13px;
+    margin-bottom: 1rem;
+  }
+  .share,
+  footer {
+    display: flex-inline;
+    background: #fff;
+    padding: 2rem 2rem 1.5rem;
+    margin-top: -50px;
+    border-radius: 0 0 8px;
+  }
+  .social {
+    width: 250px;
+    background: var(--VeryDarkGrayishBlue);
+    border-radius: 20px;
+
+    padding: 1.5rem 2rem;
+    position: relative;
+    top: -70px;
+    left: 245px;
+  }
+  .social::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    top: 55px;
+    left: 115px;
+    background-color: var(--VeryDarkGrayishBlue);
+    transform: rotate(45deg);
+  }
+  .avatarDesktop {
+    display: flex;
+    width: 100%;
+    margin-left: -246px;
+  }
+  .avatarDesktop img {
+    display: flex;
+    width: 38px;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+  .avatarDesktopInfo {
+    font-size: 13.5px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+  .avatarDesktopInfo strong {
+    color: var(--VeryDarkGrayishBlue);
+  }
+  .avatarDesktopInfo time {
+    color: var(--DesaturatedDarkBlue);
+  }
+}
